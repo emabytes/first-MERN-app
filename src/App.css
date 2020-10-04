@@ -1,38 +1,105 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+nav {
+  background: rgb(48, 48, 48);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+#contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 2em;
+}
+#contacts article {
+  box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.55);
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  border-radius: 2px;
+  padding: 30px 10px 15px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 10px;
+}
+#contacts article div {
+  margin: 0.5em 0em;
+}
+#contacts img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+input {
+  box-sizing: border-box;
+  display: block;
+  width: 500px;
+  margin: 20px auto;
+  padding: 10px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+#single {
+  max-width: 50%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+.btn {
+  color: #fff;
+  padding: 10px 20px;
+  background: #e66465;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0.2em;
+  transition: all 0.5s; 
+}
+.btn:hover {
+  color: black;
+  padding: 10px 20px;
+}
+.hide {
+  display: none;
+}
+#single {
+  text-align: center;
+  padding-top: 5vh;
+}
+#single img {
+  width: 100%;
+  object-fit: contain;
+}
+#edit article {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#new h2 {
+  text-align: center;
+  padding-top: 10vh;
 }
